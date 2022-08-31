@@ -1,0 +1,954 @@
+
+Invoking autoreconf in build directory: /home/user/Downloads/hhs_cam_0/
+
+sh -c "autoreconf -i" 
+sh: 1: autoreconf: not found
+
+Configuration failed with error
+15:37:49 **** Clean-only build of configuration Build (GNU) for project hhs_cam_0 ****
+make clean 
+make: *** No rule to make target 'clean'.  Stop.
+"make clean" terminated with exit code 2. Build might be incomplete.
+
+Invoking autoreconf in build directory: /home/user/Downloads/hhs_cam_0/
+
+sh -c "autoreconf -i" 
+sh: 1: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()15:37:51 **** Build of configuration Build (GNU) for project hhs_cam_0 ****
+make all 
+make: *** No rule to make target 'all'.  Stop.
+"make all" terminated with exit code 2. Build might be incomplete.
+15:40:51 **** Clean-only build of configuration Default for project hhs_cam_0 ****
+make clean 
+make: *** No rule to make target 'clean'.  Stop.
+"make clean" terminated with exit code 2. Build might be incomplete.
+
+Invoking autoreconf in build directory: /home/user/Downloads/hhs_cam_0/
+
+sh -c "autoreconf -i" 
+sh: 1: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()15:40:53 **** Build of configuration Default for project hhs_cam_0 ****
+make all 
+make: *** No rule to make target 'all'.  Stop.
+"make all" terminated with exit code 2. Build might be incomplete.
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Default
+
+sh -c "autoreconf -i" 
+sh: 1: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()15:44:49 **** Build of configuration Default for project hhs_cam_0 ****
+make all 
+make: Nothing to be done for 'all'.
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Default
+
+sh -c "autoreconf -i" 
+sh: 1: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()15:45:02 **** Incremental Build of configuration Default for project hhs_cam_0 ****
+make all 
+make: Nothing to be done for 'all'.
+15:49:57 **** Clean-only build of configuration Default for project hhs_cam_0 ****
+make clean 
+rm ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm: cannot remove './src/dh0.d': No such file or directory
+rm: cannot remove './src/dh0.o': No such file or directory
+rm: cannot remove './src/hhs_cam.d': No such file or directory
+rm: cannot remove './src/hhs_cam.o': No such file or directory
+rm 
+make: [src/subdir.mk:31: clean-src] Error 1 (ignored)
+rm: missing operand
+Try 'rm --help' for more information.
+make: [makefile:65: clean] Error 1 (ignored)
+ 
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Default
+
+sh -c "autoreconf -i" 
+sh: 1: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()15:49:58 **** Build of configuration Default for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+/bin/sh: 1: g++: not found
+make: *** [src/subdir.mk:23: src/dh0.o] Error 127
+"make all" terminated with exit code 2. Build might be incomplete.
+15:51:16 **** Clean-only build of configuration Default for project hhs_cam_0 ****
+make clean 
+rm ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm: cannot remove './src/dh0.d': No such file or directory
+rm: cannot remove './src/dh0.o': No such file or directory
+rm: cannot remove './src/hhs_cam.d': No such file or directory
+rm: cannot remove './src/hhs_cam.o': No such file or directory
+rm hhs_cam_0
+make: [src/subdir.mk:31: clean-src] Error 1 (ignored)
+rm: cannot remove 'hhs_cam_0': No such file or directory
+make: [makefile:65: clean] Error 1 (ignored)
+ 
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Default
+
+sh -c "autoreconf -i" 
+sh: 1: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()15:51:17 **** Build of configuration Default for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+../src/dh0.cpp:16:10: fatal error: opencv.hpp: No such file or directory
+   16 | #include <opencv.hpp>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:56:00 **** Clean-only build of configuration Default for project hhs_cam_0 ****
+make clean 
+rm ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm hhs_cam_0
+rm: cannot remove './src/dh0.d': No such file or directory
+rm: cannot remove './src/dh0.o': No such file or directory
+rm: cannot remove './src/hhs_cam.d': No such file or directory
+rm: cannot remove './src/hhs_cam.o': No such file or directory
+make: [src/subdir.mk:31: clean-src] Error 1 (ignored)
+rm: cannot remove 'hhs_cam_0': No such file or directory
+make: [makefile:65: clean] Error 1 (ignored)
+ 
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Default
+
+sh -c "autoreconf -i" 
+sh: 1: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()15:56:03 **** Build of configuration Default for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:10:20 **** Clean-only build of configuration Default for project hhs_cam_0 ****
+make clean 
+rm ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm: cannot remove './src/dh0.d': No such file or directory
+rm: cannot remove './src/dh0.o': No such file or directory
+rm: cannot remove './src/hhs_cam.d': No such file or directory
+rm: cannot remove './src/hhs_cam.o': No such file or directory
+rm hhs_cam_0
+make: [src/subdir.mk:31: clean-src] Error 1 (ignored)
+rm: cannot remove 'hhs_cam_0': No such file or directory
+make: [makefile:65: clean] Error 1 (ignored)
+ 
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Default
+
+sh -c "autoreconf -i" 
+sh: 1: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()16:10:22 **** Build of configuration Default for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Default
+
+sh -c "autoreconf -i" 
+sh: 1: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()16:11:54 **** Incremental Build of configuration Default for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Default
+
+sh -c "autoreconf -i" 
+sh: 1: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()16:12:03 **** Incremental Build of configuration Default for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:14:01 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm -rf ./src/dh0.o ./src/hhs_cam.o ./src/dh0.d ./src/hhs_cam.d  hhs_cam_0
+ 
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Release
+
+sh -c "autoreconf -i" 
+sh: 1: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()16:14:03 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm -rf ./src/dh0.o ./src/hhs_cam.o ./src/dh0.d ./src/hhs_cam.d  hhs_cam_0
+ 
+16:14:04 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:21:17 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm: cannot remove './src/dh0.d': No such file or directory
+rm: cannot remove './src/dh0.o': No such file or directory
+rm: cannot remove './src/hhs_cam.d': No such file or directory
+rm: cannot remove './src/hhs_cam.o': No such file or directory
+rm hhs_cam_0
+make: [src/subdir.mk:31: clean-src] Error 1 (ignored)
+rm: cannot remove 'hhs_cam_0': No such file or directory
+make: [makefile:64: clean] Error 1 (ignored)
+ 
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Release
+
+sh -c "autoreconf -i" 
+sh: 1: autoreconf: not found
+
+Configuration failed with error
+Build stopped
+()16:21:18 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:24:26 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm: cannot remove './src/dh0.d': No such file or directory
+rm: cannot remove './src/dh0.o': No such file or directory
+rm: cannot remove './src/hhs_cam.d': No such file or directory
+rm: cannot remove './src/hhs_cam.o': No such file or directory
+make: [src/subdir.mk:31: clean-src] Error 1 (ignored)
+rm hhs_cam_0
+rm: cannot remove 'hhs_cam_0': No such file or directory
+make: [makefile:64: clean] Error 1 (ignored)
+ 
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Release
+
+sh -c "autoreconf -i" 
+autoreconf: error: 'configure.ac' is required
+
+Configuration failed with error
+Build stopped
+()16:24:28 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:28:22 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm: cannot remove './src/dh0.d': No such file or directory
+rm: cannot remove './src/dh0.o': No such file or directory
+rm: cannot remove './src/hhs_cam.d': No such file or directory
+rm: cannot remove './src/hhs_cam.o': No such file or directory
+rm hhs_cam_0
+make: [src/subdir.mk:31: clean-src] Error 1 (ignored)
+rm: cannot remove 'hhs_cam_0': No such file or directory
+make: [makefile:64: clean] Error 1 (ignored)
+ 
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Release
+
+sh -c "autoreconf -i" 
+autoreconf: error: 'configure.ac' is required
+
+Configuration failed with error
+Build stopped
+()16:28:23 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:28:59 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm: cannot remove './src/dh0.d': No such file or directory
+rm: cannot remove './src/dh0.o': No such file or directory
+rm: cannot remove './src/hhs_cam.d': No such file or directory
+rm: cannot remove './src/hhs_cam.o': No such file or directory
+rm hhs_cam_0
+make: [src/subdir.mk:31: clean-src] Error 1 (ignored)
+rm: cannot remove 'hhs_cam_0': No such file or directory
+make: [makefile:64: clean] Error 1 (ignored)
+ 
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Release
+
+sh -c "autoreconf -i" 
+autoreconf: error: 'configure.ac' is required
+
+Configuration failed with error
+Build stopped
+()14:29:01 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:35:46 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm: cannot remove './src/dh0.d': No such file or directory
+rm: cannot remove './src/dh0.o': No such file or directory
+rm: cannot remove './src/hhs_cam.d': No such file or directory
+rm: cannot remove './src/hhs_cam.o': No such file or directory
+rm hhs_cam_0
+make: [src/subdir.mk:31: clean-src] Error 1 (ignored)
+rm: cannot remove 'hhs_cam_0': No such file or directory
+make: [makefile:64: clean] Error 1 (ignored)
+ 
+
+Invoking autoreconf in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Release
+
+sh -c "autoreconf -i" 
+autoreconf: error: 'configure.ac' is required
+
+Configuration failed with error
+Build stopped
+()14:35:48 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:36:47 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm: cannot remove './src/dh0.d': No such file or directory
+rm: cannot remove './src/dh0.o': No such file or directory
+rm: cannot remove './src/hhs_cam.d': No such file or directory
+rm: cannot remove './src/hhs_cam.o': No such file or directory
+rm hhs_cam_0
+make: [src/subdir.mk:31: clean-src] Error 1 (ignored)
+rm: cannot remove 'hhs_cam_0': No such file or directory
+make: [makefile:64: clean] Error 1 (ignored)
+ 
+
+Generating Makefile in build directory: /home/user/soft/workspace_cv/hhs_cam_0/Release
+
+sh -c /home/user/soft/workspace_cv/hhs_cam_0 
+sh: 1: /home/user/soft/workspace_cv/hhs_cam_0: Permission denied
+
+Configuration failed with error
+Build stopped
+()14:36:48 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:38:09 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm: cannot remove './src/dh0.d': No such file or directory
+rm: cannot remove './src/dh0.o': No such file or directory
+rm: cannot remove './src/hhs_cam.d': No such file or directory
+rm: cannot remove './src/hhs_cam.o': No such file or directory
+rm hhs_cam_0
+make: [src/subdir.mk:31: clean-src] Error 1 (ignored)
+rm: cannot remove 'hhs_cam_0': No such file or directory
+make: [makefile:64: clean] Error 1 (ignored)
+ 
+14:38:10 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:39:00 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm: cannot remove './src/dh0.d': No such file or directory
+rm: cannot remove './src/dh0.o': No such file or directory
+rm: cannot remove './src/hhs_cam.d': No such file or directory
+rm: cannot remove './src/hhs_cam.o': No such file or directory
+rm hhs_cam_0
+make: [src/subdir.mk:31: clean-src] Error 1 (ignored)
+rm: cannot remove 'hhs_cam_0': No such file or directory
+make: [makefile:64: clean] Error 1 (ignored)
+ 
+14:39:01 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:41:48 **** Build of configuration Debug for project hhs_cam_1 ****
+make all 
+Building file: ../src/hhs_cam_1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hhs_cam_1.d" -MT"src/hhs_cam_1.o" -o "src/hhs_cam_1.o" "../src/hhs_cam_1.cpp"
+Finished building: ../src/hhs_cam_1.cpp
+ 
+Building target: hhs_cam_1
+Invoking: GCC C++ Linker
+g++  -o "hhs_cam_1" ./src/hhs_cam_1.o   
+Finished building target: hhs_cam_1
+ 
+14:42:13 **** Clean-only build of configuration Debug for project hhs_cam_1 ****
+make clean 
+rm -rf ./src/hhs_cam_1.d ./src/hhs_cam_1.o
+rm -rf hhs_cam_1
+ 
+14:42:14 **** Build of configuration Debug for project hhs_cam_1 ****
+make all 
+Building file: ../src/hhs_cam_1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hhs_cam_1.d" -MT"src/hhs_cam_1.o" -o "src/hhs_cam_1.o" "../src/hhs_cam_1.cpp"
+Finished building: ../src/hhs_cam_1.cpp
+ 
+Building target: hhs_cam_1
+Invoking: GCC C++ Linker
+g++  -o "hhs_cam_1" ./src/hhs_cam_1.o   
+Finished building target: hhs_cam_1
+ 
+14:42:44 **** Build of configuration Release for project hhs_cam_1 ****
+make all 
+Building file: ../src/hhs_cam_1.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hhs_cam_1.d" -MT"src/hhs_cam_1.o" -o "src/hhs_cam_1.o" "../src/hhs_cam_1.cpp"
+Finished building: ../src/hhs_cam_1.cpp
+ 
+Building target: hhs_cam_1
+Invoking: GCC C++ Linker
+g++  -o "hhs_cam_1" ./src/hhs_cam_1.o   
+Finished building target: hhs_cam_1
+ 
+14:45:48 **** Clean-only build of configuration Release for project hhs_cam_1 ****
+make clean 
+rm -rf ./src/hhs_cam_1.d ./src/hhs_cam_1.o
+rm -rf hhs_cam_1
+ 
+14:45:49 **** Build of configuration Release for project hhs_cam_1 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+../src/dh0.cpp:16:10: fatal error: opencv.hpp: No such file or directory
+   16 | #include <opencv.hpp>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:46:41 **** Clean-only build of configuration Release for project hhs_cam_1 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_1
+ 
+14:46:42 **** Build of configuration Release for project hhs_cam_1 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:48:51 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm hhs_cam_0
+ 
+rm: cannot remove './src/dh0.d': No such file or directory
+rm: cannot remove './src/dh0.o': No such file or directory
+rm: cannot remove './src/hhs_cam.d': No such file or directory
+rm: cannot remove './src/hhs_cam.o': No such file or directory
+make: [src/subdir.mk:31: clean-src] Error 1 (ignored)
+rm: cannot remove 'hhs_cam_0': No such file or directory
+make: [makefile:64: clean] Error 1 (ignored)
+14:48:52 **** Clean-only build of configuration Release for project hhs_cam_1 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_1
+ 
+14:48:54 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:48:56 **** Build of configuration Release for project hhs_cam_1 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+../src/dh0.cpp:16:10: fatal error: opencv.hpp: No such file or directory
+   16 | #include <opencv.hpp>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:51:30 **** Clean-only build of configuration Release for project hhs_cam_1 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_1
+ 
+14:51:30 **** Build of configuration Release for project hhs_cam_1 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:51:38 **** Incremental Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:51:39 **** Incremental Build of configuration Release for project hhs_cam_1 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:54:01 **** Clean-only build of configuration Release for project hhs_cam_1 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_1
+ 
+14:54:02 **** Build of configuration Release for project hhs_cam_1 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:56:05 **** Clean-only build of configuration Release for project hhs_cam_1 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_1
+ 
+14:56:06 **** Build of configuration Release for project hhs_cam_1 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv4/opencv2 -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+In file included from ../src/dh0.cpp:16:
+/usr/include/opencv4/opencv2/opencv.hpp:48:10: fatal error: opencv2/opencv_modules.hpp: No such file or directory
+   48 | #include "opencv2/opencv_modules.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:01:36 **** Clean-only build of configuration Release for project hhs_cam_1 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_1
+ 
+15:01:37 **** Build of configuration Release for project hhs_cam_1 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+../src/dh0.cpp:16:10: fatal error: opencv.hpp: No such file or directory
+   16 | #include <opencv.hpp>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:03:50 **** Clean-only build of configuration Release for project hhs_cam_1 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_1
+ 
+15:03:51 **** Build of configuration Release for project hhs_cam_1 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+../src/dh0.cpp:16:10: fatal error: opencv.hpp: No such file or directory
+   16 | #include <opencv.hpp>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:23: src/dh0.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:11:46 **** Clean-only build of configuration Release for project hhs_cam_1 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_1
+ 
+15:11:47 **** Build of configuration Release for project hhs_cam_1 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+Finished building: ../src/dh0.cpp
+ 
+Building file: ../src/hhs_cam.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hhs_cam.d" -MT"src/hhs_cam.o" -o "src/hhs_cam.o" "../src/hhs_cam.cpp"
+Finished building: ../src/hhs_cam.cpp
+ 
+Building target: hhs_cam_1
+Invoking: GCC C++ Linker
+g++  -o "hhs_cam_1" ./src/dh0.o ./src/hhs_cam.o   
+/usr/bin/ld: ./src/dh0.o: in function `dh::~dh()':
+dh0.cpp:(.text+0x1e): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: ./src/dh0.o: in function `dh::~dh()':
+dh0.cpp:(.text+0x4e): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: dh0.cpp:(.text+0x57): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: ./src/dh0.o: in function `dh::setExpoMs(double)':
+dh0.cpp:(.text+0x3cd): undefined reference to `GXSetEnum'
+/usr/bin/ld: dh0.cpp:(.text+0x3e9): undefined reference to `GXSetFloat'
+/usr/bin/ld: ./src/dh0.o: in function `dh::getExpoMs(double*)':
+dh0.cpp:(.text+0x574): undefined reference to `GXSetEnum'
+/usr/bin/ld: dh0.cpp:(.text+0x585): undefined reference to `GXGetFloat'
+/usr/bin/ld: ./src/dh0.o: in function `dh::PixelFormatConvert(GX_FRAME_BUFFER*)':
+dh0.cpp:(.text+0x957): undefined reference to `DxRaw16toRaw8'
+/usr/bin/ld: dh0.cpp:(.text+0x985): undefined reference to `DxRaw8toRGB24'
+/usr/bin/ld: ./src/dh0.o: in function `dh::GetErrorString(int)':
+dh0.cpp:(.text+0xbdd): undefined reference to `GXGetLastError'
+/usr/bin/ld: dh0.cpp:(.text+0xc00): undefined reference to `GXGetLastError'
+/usr/bin/ld: ./src/dh0.o: in function `dh::setWB(int)':
+dh0.cpp:(.text+0xda7): undefined reference to `GXSetEnum'
+/usr/bin/ld: dh0.cpp:(.text+0xdc0): undefined reference to `GXCloseDevice'
+/usr/bin/ld: dh0.cpp:(.text+0xdcd): undefined reference to `GXCloseLib'
+/usr/bin/ld: ./src/dh0.o: in function `dh::close()':
+dh0.cpp:(.text+0xe93): undefined reference to `GXStreamOff'
+/usr/bin/ld: dh0.cpp:(.text+0xed0): undefined reference to `GXCloseDevice'
+/usr/bin/ld: dh0.cpp:(.text+0xed9): undefined reference to `GXCloseLib'
+/usr/bin/ld: dh0.cpp:(.text+0xf0b): undefined reference to `GXCloseLib'
+/usr/bin/ld: dh0.cpp:(.text+0xf42): undefined reference to `GXCloseDevice'
+/usr/bin/ld: dh0.cpp:(.text+0xf4f): undefined reference to `GXCloseLib'
+/usr/bin/ld: ./src/dh0.o: in function `dh::captureFrame(cv::Mat*)':
+dh0.cpp:(.text+0xfc3): undefined reference to `GXDQBuf'
+/usr/bin/ld: dh0.cpp:(.text+0x1002): undefined reference to `cv::Mat::Mat(int, int, int, void*, unsigned long)'
+/usr/bin/ld: dh0.cpp:(.text+0x100d): undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+/usr/bin/ld: dh0.cpp:(.text+0x1015): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: dh0.cpp:(.text+0x1083): undefined reference to `cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+/usr/bin/ld: dh0.cpp:(.text+0x1091): undefined reference to `GXQBuf'
+/usr/bin/ld: dh0.cpp:(.text+0x1135): undefined reference to `cv::Mat::Mat(cv::Mat const&, cv::Rect_<int> const&)'
+/usr/bin/ld: dh0.cpp:(.text+0x1140): undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+/usr/bin/ld: dh0.cpp:(.text+0x1148): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: dh0.cpp:(.text+0x11a6): undefined reference to `cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int)'
+/usr/bin/ld: dh0.cpp:(.text+0x11e1): undefined reference to `cv::Mat::Mat(int, int, int, void*, unsigned long)'
+/usr/bin/ld: dh0.cpp:(.text+0x11ec): undefined reference to `cv::Mat::operator=(cv::Mat&&)'
+/usr/bin/ld: dh0.cpp:(.text+0x11f4): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: ./src/dh0.o: in function `dh::dh(int)':
+dh0.cpp:(.text+0x1362): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: dh0.cpp:(.text+0x136a): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: dh0.cpp:(.text+0x13a3): undefined reference to `GXInitLib'
+/usr/bin/ld: dh0.cpp:(.text+0x13bd): undefined reference to `GXUpdateDeviceList'
+/usr/bin/ld: dh0.cpp:(.text+0x13e2): undefined reference to `GXOpenDeviceByIndex'
+/usr/bin/ld: dh0.cpp:(.text+0x1400): undefined reference to `GXGetStringLength'
+/usr/bin/ld: dh0.cpp:(.text+0x141d): undefined reference to `GXIsImplemented'
+/usr/bin/ld: dh0.cpp:(.text+0x1444): undefined reference to `GXGetEnum'
+/usr/bin/ld: dh0.cpp:(.text+0x1461): undefined reference to `GXGetInt'
+/usr/bin/ld: dh0.cpp:(.text+0x147e): undefined reference to `GXSetEnum'
+/usr/bin/ld: dh0.cpp:(.text+0x1499): undefined reference to `GXSetEnum'
+/usr/bin/ld: dh0.cpp:(.text+0x14b2): undefined reference to `GXSetAcqusitionBufferNumber'
+/usr/bin/ld: dh0.cpp:(.text+0x14d0): undefined reference to `GXIsImplemented'
+/usr/bin/ld: dh0.cpp:(.text+0x14f5): undefined reference to `GXSetInt'
+/usr/bin/ld: dh0.cpp:(.text+0x1513): undefined reference to `GXIsImplemented'
+/usr/bin/ld: dh0.cpp:(.text+0x153c): undefined reference to `GXSetEnum'
+/usr/bin/ld: dh0.cpp:(.text+0x155a): undefined reference to `GXSetEnum'
+/usr/bin/ld: dh0.cpp:(.text+0x158c): undefined reference to `GXStreamOn'
+/usr/bin/ld: dh0.cpp:(.text+0x1603): undefined reference to `GXSetInt'
+/usr/bin/ld: dh0.cpp:(.text+0x1623): undefined reference to `GXCloseLib'
+/usr/bin/ld: dh0.cpp:(.text+0x1637): undefined reference to `GXCloseDevice'
+/usr/bin/ld: dh0.cpp:(.text+0x1644): undefined reference to `GXCloseLib'
+/usr/bin/ld: dh0.cpp:(.text+0x168e): undefined reference to `GXCloseDevice'
+/usr/bin/ld: dh0.cpp:(.text+0x169b): undefined reference to `GXCloseLib'
+/usr/bin/ld: dh0.cpp:(.text+0x16df): undefined reference to `GXCloseLib'
+/usr/bin/ld: ./src/dh0.o: in function `dh::getName(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)':
+dh0.cpp:(.text+0x1745): undefined reference to `GXGetString'
+/usr/bin/ld: dh0.cpp:(.text+0x198f): undefined reference to `GXCloseDevice'
+/usr/bin/ld: dh0.cpp:(.text+0x199c): undefined reference to `GXCloseLib'
+/usr/bin/ld: ./src/dh0.o: in function `dh::~dh()':
+dh0.cpp:(.text+0x28): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: ./src/dh0.o: in function `dh::captureFrame(cv::Mat*) [clone .cold]':
+dh0.cpp:(.text.unlikely+0x4): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: ./src/dh0.o: in function `dh::dh(int) [clone .cold]':
+dh0.cpp:(.text.unlikely+0x14): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: dh0.cpp:(.text.unlikely+0x1c): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: ./src/hhs_cam.o: in function `InitWindows(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+hhs_cam.cpp:(.text+0x6aa): undefined reference to `cv::namedWindow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
+/usr/bin/ld: ./src/hhs_cam.o: in function `main':
+hhs_cam.cpp:(.text.startup+0xcb): undefined reference to `cv::Mat::Mat()'
+/usr/bin/ld: hhs_cam.cpp:(.text.startup+0x1e8): undefined reference to `cv::namedWindow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
+/usr/bin/ld: hhs_cam.cpp:(.text.startup+0x21c): undefined reference to `cv::getTickCount()'
+/usr/bin/ld: hhs_cam.cpp:(.text.startup+0x2f2): undefined reference to `cv::Mat::empty() const'
+/usr/bin/ld: hhs_cam.cpp:(.text.startup+0x349): undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
+/usr/bin/ld: hhs_cam.cpp:(.text.startup+0x353): undefined reference to `cv::waitKey(int)'
+/usr/bin/ld: hhs_cam.cpp:(.text.startup+0x39b): undefined reference to `cv::Mat::~Mat()'
+/usr/bin/ld: hhs_cam.cpp:(.text.startup+0x561): undefined reference to `cv::getTickCount()'
+/usr/bin/ld: hhs_cam.cpp:(.text.startup+0x57c): undefined reference to `cv::getTickFrequency()'
+/usr/bin/ld: hhs_cam.cpp:(.text.startup+0x5ce): undefined reference to `cv::getTickCount()'
+/usr/bin/ld: hhs_cam.cpp:(.text.startup+0x6cb): undefined reference to `cv::putText(cv::_InputOutputArray const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::Point_<int>, int, double, cv::Scalar_<double>, int, int, bool)'
+/usr/bin/ld: ./src/hhs_cam.o: in function `main.cold':
+hhs_cam.cpp:(.text.unlikely+0x28): undefined reference to `cv::Mat::~Mat()'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:58: hhs_cam_1] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:19:26 **** Clean-only build of configuration Release for project hhs_cam_1 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_1
+ 
+15:19:27 **** Build of configuration Release for project hhs_cam_1 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+Finished building: ../src/dh0.cpp
+ 
+Building file: ../src/hhs_cam.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hhs_cam.d" -MT"src/hhs_cam.o" -o "src/hhs_cam.o" "../src/hhs_cam.cpp"
+Finished building: ../src/hhs_cam.cpp
+ 
+Building target: hhs_cam_1
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -o "hhs_cam_1" ./src/dh0.o ./src/hhs_cam.o    -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -lgxiapi
+Finished building target: hhs_cam_1
+ 
+15:22:26 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_1
+ 
+15:22:27 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+Finished building: ../src/dh0.cpp
+ 
+Building file: ../src/hhs_cam.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hhs_cam.d" -MT"src/hhs_cam.o" -o "src/hhs_cam.o" "../src/hhs_cam.cpp"
+Finished building: ../src/hhs_cam.cpp
+ 
+Building target: hhs_cam_0
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -o "hhs_cam_0" ./src/dh0.o ./src/hhs_cam.o    -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -lgxiapi
+Finished building target: hhs_cam_0
+ 
+15:24:30 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_0
+ 
+15:24:31 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+Finished building: ../src/dh0.cpp
+ 
+Building file: ../src/hhs_cam.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hhs_cam.d" -MT"src/hhs_cam.o" -o "src/hhs_cam.o" "../src/hhs_cam.cpp"
+Finished building: ../src/hhs_cam.cpp
+ 
+Building target: hhs_cam_0
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -o "hhs_cam_0" ./src/dh0.o ./src/hhs_cam.o    -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -lgxiapi
+Finished building target: hhs_cam_0
+ 
+15:34:07 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_0
+ 
+15:34:09 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+Finished building: ../src/dh0.cpp
+ 
+Building file: ../src/hhs_cam.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hhs_cam.d" -MT"src/hhs_cam.o" -o "src/hhs_cam.o" "../src/hhs_cam.cpp"
+Finished building: ../src/hhs_cam.cpp
+ 
+Building target: hhs_cam_0
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -o "hhs_cam_0" ./src/dh0.o ./src/hhs_cam.o    -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -lgxiapi
+Finished building target: hhs_cam_0
+ 
+13:41:35 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_0
+ 
+13:41:36 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+Finished building: ../src/dh0.cpp
+ 
+Building file: ../src/hhs_cam.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hhs_cam.d" -MT"src/hhs_cam.o" -o "src/hhs_cam.o" "../src/hhs_cam.cpp"
+Finished building: ../src/hhs_cam.cpp
+ 
+Building target: hhs_cam_0
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -o "hhs_cam_0" ./src/dh0.o ./src/hhs_cam.o    -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -lgxiapi
+Finished building target: hhs_cam_0
+ 
+17:03:10 **** Incremental Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/hhs_cam.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hhs_cam.d" -MT"src/hhs_cam.o" -o "src/hhs_cam.o" "../src/hhs_cam.cpp"
+Finished building: ../src/hhs_cam.cpp
+ 
+Building target: hhs_cam_0
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -o "hhs_cam_0" ./src/dh0.o ./src/hhs_cam.o    -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -lgxiapi
+Finished building target: hhs_cam_0
+ 
