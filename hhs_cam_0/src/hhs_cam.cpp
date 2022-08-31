@@ -63,7 +63,7 @@ void ConvertGrey(Mat*);
 
  *****************************************************************************/
 
-int ShowFPS = false;
+int ShowFPS = true;
 int DisplayMode = COLMODE_COL;
 
 struct ImgConf {

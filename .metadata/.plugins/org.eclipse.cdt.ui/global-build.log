@@ -952,3 +952,37 @@ Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu/ -o "hhs_cam_0" ./src/dh0.o ./src/hhs_cam.o    -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -lgxiapi
 Finished building target: hhs_cam_0
  
+17:08:12 **** Clean-only build of configuration Release for project hhs_cam_0 ****
+make clean 
+rm -rf ./src/dh0.d ./src/dh0.o ./src/hhs_cam.d ./src/hhs_cam.o
+rm -rf hhs_cam_0
+ 
+17:08:13 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/dh0.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/dh0.d" -MT"src/dh0.o" -o "src/dh0.o" "../src/dh0.cpp"
+Finished building: ../src/dh0.cpp
+ 
+Building file: ../src/hhs_cam.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hhs_cam.d" -MT"src/hhs_cam.o" -o "src/hhs_cam.o" "../src/hhs_cam.cpp"
+Finished building: ../src/hhs_cam.cpp
+ 
+Building target: hhs_cam_0
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -o "hhs_cam_0" ./src/dh0.o ./src/hhs_cam.o    -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -lgxiapi
+Finished building target: hhs_cam_0
+ 
+17:12:14 **** Incremental Build of configuration Release for project hhs_cam_0 ****
+make all 
+Building file: ../src/hhs_cam.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/include/opencv2 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/hhs_cam.d" -MT"src/hhs_cam.o" -o "src/hhs_cam.o" "../src/hhs_cam.cpp"
+Finished building: ../src/hhs_cam.cpp
+ 
+Building target: hhs_cam_0
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -o "hhs_cam_0" ./src/dh0.o ./src/hhs_cam.o    -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -lgxiapi
+Finished building target: hhs_cam_0
+ 

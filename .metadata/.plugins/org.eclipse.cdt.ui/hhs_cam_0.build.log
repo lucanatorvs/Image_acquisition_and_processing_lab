@@ -1,4 +1,4 @@
-17:03:10 **** Incremental Build of configuration Release for project hhs_cam_0 ****
+17:12:14 **** Incremental Build of configuration Release for project hhs_cam_0 ****
 make all 
 Building file: ../src/hhs_cam.cpp
 Invoking: GCC C++ Compiler
@@ -11,5 +11,5 @@ g++ -L/usr/lib/x86_64-linux-gnu/ -o "hhs_cam_0" ./src/dh0.o ./src/hhs_cam.o    -
 Finished building target: hhs_cam_0
  
 
-17:03:16 Build Finished. 0 errors, 0 warnings. (took 5s.443ms)
+17:12:18 Build Finished. 0 errors, 0 warnings. (took 4s.695ms)
 
