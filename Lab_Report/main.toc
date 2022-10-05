@@ -1,0 +1,7 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Assignment 1 \\ {Controlling Digital I/O and Round Robin Scheduling}}{2}{section.1}%
+\contentsline {section}{\numberline {2}Assignment 2 {Interrupts and CBP LEDS control}}{2}{section.2}%
+\contentsline {section}{\numberline {3}Assignment 3 \\ {Proximity Sensor under FreeRTOS}}{2}{section.3}%
+\contentsline {section}{\numberline {4}Assignment 4 \\ {Single Click Capacitive Touch Button}}{2}{section.4}%
+\contentsline {section}{\numberline {5}Assignment 5 \\ {A Direction Controller}}{2}{section.5}%
+\contentsline {section}{\numberline {6}Assignment 6 \\ {A Position Sensitive Wheel Slider}}{2}{section.6}%
