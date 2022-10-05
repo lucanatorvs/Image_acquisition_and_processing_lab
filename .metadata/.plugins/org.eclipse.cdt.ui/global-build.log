@@ -986,3 +986,16 @@ Invoking: GCC C++ Linker
 g++ -L/usr/lib/x86_64-linux-gnu/ -o "hhs_cam_0" ./src/dh0.o ./src/hhs_cam.o    -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -lgxiapi
 Finished building target: hhs_cam_0
  
+11:07:19 **** Build of configuration Release for project hhs_cam_0 ****
+make all 
+make: Nothing to be done for 'all'.
+11:16:13 **** Incremental Build of configuration Release for project hhs_cam_0 ****
+make all 
+make: Nothing to be done for 'all'.
+11:16:15 **** Build of configuration Release for project hhs_cam_2 ****
+make all 
+Building target: hhs_cam_2
+Invoking: GCC C++ Linker
+g++ -L/usr/lib/x86_64-linux-gnu/ -o "hhs_cam_2" ./src/dh0.o ./src/hhs_cam.o    -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_imgcodecs -lgxiapi
+Finished building target: hhs_cam_2
+ 
