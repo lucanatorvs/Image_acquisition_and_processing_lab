@@ -1,0 +1,26 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+van Rijnsoever%
+}{%
+van Rijnsoever%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+Lab_Assignments}
+\APACinsertmetastar {%
+Lab_Assignments}%
+\begin{APACrefauthors}%
+van Rijnsoever, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {ARTS Workshop Embedded Systems.} {Arts workshop embedded
+  systems.}
+\newblock
+\APACaddressPublisher{}{The Hague University of Applied Sciences}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
