@@ -89,7 +89,7 @@ int main(int argc, char *argv[]) {
 	// set default values
 	cfg.resolution = CAM_RES_640_480;
 	cfg.camMode = CAM_MODE_COL;
-	cfg.exposureMS = 12.34; // setting default exposure time in milliseconds
+	cfg.exposureMS = 100; // setting default exposure time in milliseconds
 
 	//	set the configuration according to commandline-parameters
 	Config(argc, argv, &cfg);
@@ -164,15 +164,19 @@ int main(int argc, char *argv[]) {
 						false);
 			}
 
-			// capture 50 frames
+			// capture raw image
 			imshow(camName, image);
 			if (captRAW == true) {
 				captRAW = false;
-				for(int i = 0; i < 50; i++) {
-					cam0.captureFrame(&image);
-					// save image with frame number
-					imwrite("../capt/img" + to_string(i) + ".png", image);
-				}
+				// save raw image
+				cfg.camMode = CAM_MODE_RAW;
+				cam0.captureFrame(&image);
+				imwrite("../capt/RAW.png", image);
+
+				// save color image
+				cfg.camMode = CAM_MODE_COL;
+				cam0.captureFrame(&image);
+				imwrite("../capt/COL.png", image);
 			}
 		}
 

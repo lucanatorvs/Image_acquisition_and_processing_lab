@@ -1,6 +1,6 @@
-11:16:13 **** Incremental Build of configuration Release for project hhs_cam_0 ****
+10:55:10 **** Incremental Build of configuration Release for project hhs_cam_0 ****
 make all 
 make: Nothing to be done for 'all'.
 
-11:16:15 Build Finished. 0 errors, 0 warnings. (took 1s.574ms)
+10:55:11 Build Finished. 0 errors, 0 warnings. (took 719ms)
 
