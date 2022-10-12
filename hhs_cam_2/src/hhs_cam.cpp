@@ -164,7 +164,7 @@ int main(int argc, char *argv[]) {
 						false);
 			}
 
-			// display frame in standard window
+			// capture 50 frames
 			imshow(camName, image);
 			if (capt50 == true) {
 				capt50 = false;
@@ -209,6 +209,7 @@ int main(int argc, char *argv[]) {
 			case ' ':
 			    cout << "Saving 50" << endl;
 				capt50 = true;
+				// do capuring here???
 			}
 		}
 	}
