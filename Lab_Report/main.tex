@@ -44,6 +44,7 @@
 \usepackage[a4paper,top=3cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
 
 %% Useful packages
+\usepackage{pdfpages}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
@@ -92,7 +93,8 @@
 \HRule \\[2cm]
 \large
 \emph{Author/Student:}\\
-Luca van Straaten (18073611)\\[1.5cm]													% Author info
+Luca van Straaten (18073611)\\													% Author info
+Roderik Leijssen (15060292)\\[1.5cm]
 \emph{Instructor:}\\
 F.  Theinert\\[1.5cm]										
 {\large \today}\\[5cm]
@@ -112,6 +114,9 @@ Document version 1.0
 %%\begin{abstract}
 %%Your abstract.
 %%\end{abstract}
+
+\graphicspath{ {./images/} }
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
 
 %%%% SECTIONS
 \input{content/Introduction}
@@ -134,5 +139,12 @@ Document version 1.0
 \newpage
 \bibliographystyle{apacite}
 \bibliography{ref}
+
+\newpage
+\appendix
+\section{Appendix A}
+\label{sec:appendix_A}
+
+\includepdf[pages=-]{./appendix/hhs_cam.cpp.pdf}
 
 \end{document}
