@@ -46,7 +46,7 @@ Mat filter(Mat& input) {
 			out[h][w]=(uint8_t)sum;
 		}
 	}
-	Mat result = Mat(s.height, s.width, CV_8U, out); //or maybe CV_8UC1?
+	Mat result = Mat(s.height, s.width, CV_8UC1, out); //or maybe CV_8UC1?
 	Size _s = result.size();
 	std::cout << "done: " << _s.height << " " << _s.width << std::endl;
 	return result;
@@ -55,7 +55,8 @@ Mat filter(Mat& input) {
 
 int main() {
 	// Read the image (in BGR)
-    Mat img = imread("pixerror.png", IMREAD_COLOR);
+    //Mat img = imread("pixerror.png", IMREAD_COLOR);
+    Mat img = imread("fordgt_test.png", IMREAD_COLOR);
     if(img.empty())
     {
         std::cout << "Could not read the image: " << std::endl;
@@ -107,6 +108,10 @@ int main() {
     imshow("Display window", Bands[2]);
     waitKey(0); // Wait for a keystroke in the window
     imshow("Display window", Bands_filtered[0]);
+    waitKey(0); // Wait for a keystroke in the window
+    imshow("Display window", Bands_filtered[1]);
+    waitKey(0); // Wait for a keystroke in the window
+    imshow("Display window", Bands_filtered[2]);
     waitKey(0); // Wait for a keystroke in the window
     return 0;
 }
