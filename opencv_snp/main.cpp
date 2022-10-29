@@ -7,18 +7,18 @@
 
 using namespace cv;
 
-Mat filter(Mat& input) {
+void filter(Mat input, Mat& result) {
 	Size s = input.size();
-	int h, w;
-	uint32_t sum;
+	long h, w;
+	long sum;
 	
 	std::cout << "Input type was : " << input.type() << std::endl;
 	uint8_t out[s.height][s.width];
 	
 	std::cout << s.height << " " << s.width << std::endl;
 	
-	for (h=0; h<s.height; h++){
-		for(w=0; w<s.width; w++){
+	for (w=0; w<s.width; w++){
+		for(h=0; h<s.height; h++){
 			sum = 0;
 			std::vector<uint8_t> median;
 			
@@ -46,16 +46,14 @@ Mat filter(Mat& input) {
 			out[h][w]=(uint8_t)sum;
 		}
 	}
-	Mat result = Mat(s.height, s.width, CV_8UC1, out); //or maybe CV_8UC1?
+	result = Mat(s.height, s.width, CV_8U, out); //or maybe CV_8UC1?
 	Size _s = result.size();
 	std::cout << "done: " << _s.height << " " << _s.width << std::endl;
-	return result;
 }
 
 
 int main() {
 	// Read the image (in BGR)
-    //Mat img = imread("pixerror.png", IMREAD_COLOR);
     Mat img = imread("fordgt_test.png", IMREAD_COLOR);
     if(img.empty())
     {
@@ -65,53 +63,28 @@ int main() {
     
     // Split the image into 3 new images for blue, green and red.
     std::cout << "Splitting channels: " << std::endl;
-	Mat Bands[3];
-	split(img, Bands);
-
-	Mat Bands_filtered[3];
-	Bands_filtered[0] = filter(Bands[0]);
-	Bands_filtered[1] = filter(Bands[1]);
-	Bands_filtered[2] = filter(Bands[2]);
-	
-	//mix the channels together
-	Mat bgr( img.rows, img.cols, CV_8UC3 );
-	Mat out[] = {Bands_filtered[0],Bands_filtered[1], Bands_filtered[2]};
-	
-	/*
-	Mat bgra( 100, 100, CV_8UC4, Scalar(255,0,0,255) );
-	Mat bgr( bgra.rows, bgra.cols, CV_8UC3 );
-	Mat alpha( bgra.rows, bgra.cols, CV_8UC1 );
-	// forming an array of matrices is a quite efficient operation,
-	// because the matrix data is not copied, only the headers
-	Mat out[] = { bgr, alpha };
-	// bgra[0] -> bgr[2], bgra[1] -> bgr[1],
-	// bgra[2] -> bgr[0], bgra[3] -> alpha[0]
-	int from_to[] = { 0,2, 1,1, 2,0, 3,3 };
-	mixChannels( &bgra, 1, out, 2, from_to, 4 );
-	*/
+	Mat bands[3];
+	split(img, bands);
 	
 	
-	// To merge the image, create a vector that contains the channels and write the output to 'merged'
-	std::cout << "Merging: " << std::endl;
-	std::vector<Mat> channels = {Bands_filtered[0],Bands_filtered[1],Bands_filtered[2]};
-	//std::vector<Mat> channels = {Bands[0],Bands[1],Bands[2]};
-	//merge(channels, merged); //replace this with mixChannels idk
-    
+	Mat bandsFiltered[3];
+	filter(bands[0],bandsFiltered[0]);
+	filter(bands[1],bandsFiltered[1]);
+	filter(bands[2],bandsFiltered[2]);
     
     // Display the image until q is pressed
     std::cout << "Displaying result: " << std::endl;
-    //imshow("Display window", merged);
-    imshow("Display window", Bands[0]);
+    imshow("Display window", bands[0]);
     waitKey(0); // Wait for a keystroke in the window
-    imshow("Display window", Bands[1]);
+    imshow("Display window", bands[1]);
     waitKey(0); // Wait for a keystroke in the window
-    imshow("Display window", Bands[2]);
+    imshow("Display window", bands[2]);
     waitKey(0); // Wait for a keystroke in the window
-    imshow("Display window", Bands_filtered[0]);
+    imshow("Display window", bandsFiltered[0]);
     waitKey(0); // Wait for a keystroke in the window
-    imshow("Display window", Bands_filtered[1]);
+    imshow("Display window", bandsFiltered[1]);
     waitKey(0); // Wait for a keystroke in the window
-    imshow("Display window", Bands_filtered[2]);
+    imshow("Display window", bandsFiltered[2]);
     waitKey(0); // Wait for a keystroke in the window
     return 0;
 }
