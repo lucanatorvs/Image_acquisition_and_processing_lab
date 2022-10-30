@@ -1,2 +1,21 @@
 \section {Assignment 6 \\ {Demosaicing Filter}}
 \label {sec:assignment_6}
+
+\subsection{Write C/C++ code for capturing a raw image}
+
+\begin{lstlisting}[language=C, caption=save image to file, label=lst:rawcode]
+// capture raw image
+imshow(camName, image);
+if (captRAW == true) {
+    captRAW = false;
+    // save raw image
+    cfg.camMode = CAM_MODE_RAW;
+    cam0.captureFrame(&image);
+    imwrite("../capt/RAW.png", image);
+
+    // save color image
+    cfg.camMode = CAM_MODE_COL;
+    cam0.captureFrame(&image);
+    imwrite("../capt/COL.png", image);
+}
+\end{lstlisting}
