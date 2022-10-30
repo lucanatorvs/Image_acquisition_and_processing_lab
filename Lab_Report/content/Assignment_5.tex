@@ -17,7 +17,7 @@ void convolve5 (Mat* inputImg, Mat* outImg, int* kernel5){
     //I assume the mat is CV_8UC1 since I want to process BGR channels individually
     size s = inputImg->size();
     const uint8_t kernel_size = 5;
-    uint8_t out[s.s.height][s.s.width];
+    uint8_t out[s.height][s.width];
     //int kernel[kernel_size][kernel_size] = {{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1},{1,1,1,1,1}};
     
     int x ,y, h, w, i, j, sum;
