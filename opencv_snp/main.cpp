@@ -7,12 +7,12 @@
 
 using namespace cv;
 
-void filter(Mat input, Mat& result) {
-	Size s = input.size();
+void filter(Mat* input, Mat* result) {
+	Size s = input->size();
 	long h, w;
 	long sum;
 	
-	std::cout << "Input type was : " << input.type() << std::endl;
+	std::cout << "Input type was : " << input->type() << std::endl;
 	uint8_t out[s.height][s.width];
 	
 	std::cout << s.height << " " << s.width << std::endl;
@@ -35,7 +35,7 @@ void filter(Mat input, Mat& result) {
 					if (idx_y < 0 || idx_y > s.height)
 						break;
 					
-					median.push_back(input.at<uint8_t>(idx_y,idx_x));
+					median.push_back(input->at<uint8_t>(idx_y,idx_x));
 				}
 			}
 			std::sort(std::begin(median), std::end(median));
@@ -46,31 +46,41 @@ void filter(Mat input, Mat& result) {
 			out[h][w]=(uint8_t)sum;
 		}
 	}
-	result = Mat(s.height, s.width, CV_8U, out); //or maybe CV_8UC1?
-	Size _s = result.size();
-	std::cout << "done: " << _s.height << " " << _s.width << std::endl;
+	//result = Mat(s.height, s.width, CV_8U, out); //or maybe CV_8UC1?
+	//Size _s = result.size();
+	//std::cout << "done: " << _s.height << " " << _s.width << std::endl;
+	std::memcpy(result->data, out, s.height*s.width*sizeof(uint8_t));
+
 }
 
 
 int main() {
 	// Read the image (in BGR)
-    Mat img = imread("fordgt_test.png", IMREAD_COLOR);
+    Mat img = imread("pixerror.png", IMREAD_COLOR);
     if(img.empty())
     {
         std::cout << "Could not read the image: " << std::endl;
         return 1;
     }
+    Size imgsize = img.size();
     
     // Split the image into 3 new images for blue, green and red.
     std::cout << "Splitting channels: " << std::endl;
 	Mat bands[3];
 	split(img, bands);
-	
-	
+
 	Mat bandsFiltered[3];
-	filter(bands[0],bandsFiltered[0]);
-	filter(bands[1],bandsFiltered[1]);
-	filter(bands[2],bandsFiltered[2]);
+	bandsFiltered[0] = Mat(imgsize.height, imgsize.width, CV_8U);
+	bandsFiltered[1] = Mat(imgsize.height, imgsize.width, CV_8U);
+	bandsFiltered[2] = Mat(imgsize.height, imgsize.width, CV_8U);
+	
+	filter(&bands[0],&bandsFiltered[0]);
+	filter(&bands[1],&bandsFiltered[1]);
+	filter(&bands[2],&bandsFiltered[2]);
+	
+	Mat merged;
+	std::vector<Mat> channels = {bandsFiltered[0],bandsFiltered[1],bandsFiltered[2]};
+	merge(channels, merged);
     
     // Display the image until q is pressed
     std::cout << "Displaying result: " << std::endl;
@@ -85,6 +95,8 @@ int main() {
     imshow("Display window", bandsFiltered[1]);
     waitKey(0); // Wait for a keystroke in the window
     imshow("Display window", bandsFiltered[2]);
+    waitKey(0); // Wait for a keystroke in the window
+    imshow("Display window", merged);
     waitKey(0); // Wait for a keystroke in the window
     return 0;
 }
