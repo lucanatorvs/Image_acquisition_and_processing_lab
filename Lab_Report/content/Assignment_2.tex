@@ -60,19 +60,29 @@ We got the best result using a 420 ms exposure time. This is the time the camera
 \subsection{Calculation of ‘angle of view’}
 \label{sec:angle_of_view}
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.35\textwidth]{ford_gt_final2_dimensies.png}
-    \caption{Angle of view reference image}
-    \label{fig:angleofview}
-\end{figure}
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=0.35\textwidth]{ford_gt_final2_dimensies.png}
+%     \caption{Angle of view reference image}
+%     \label{fig:angleofview}
+% \end{figure}
 
-The (horisontal) angle of view is the angle between the left and right part of the frame, and the camera lens. In order to calculate this we took a picture of a measuring tape stretching the full width of the frame at a known distance, 250 mm. See figure \ref{fig:angleofview} for this image. Now we calculate the angle of view:
+% The (horisontal) angle of view is the angle between the left and right part of the frame, and the camera lens. In order to calculate this we took a picture of a measuring tape stretching the full width of the frame at a known distance, 250 mm. See figure \ref{fig:angleofview} for this image. Now we calculate the angle of view:
 
-$$ \text{framewidth} = 90\text{mm} $$
-$$ \text{distance} = 250\text{mm}$$
+% $$ \text{framewidth} = 90\text{mm} $$
+% $$ \text{distance} = 250\text{mm}$$
 
-\begin{equation}
-    \theta = 2 \cdot \arctan{\frac{{\frac{\text{framewidth}}{2}}}{\text{distance}}} = 2 \cdot \arctan{\frac{\frac{90}{2}}{250}} = 2 \cdot \arctan{\frac{45}{250}} = 2 \cdot 19.8 = 39.6 \text{ degrees}
-\end{equation}
+% \begin{equation}
+%     \theta = 2 \cdot \arctan{\frac{{\frac{\text{framewidth}}{2}}}{\text{distance}}} = 2 \cdot \arctan{\frac{\frac{90}{2}}{250}} = 2 \cdot \arctan{\frac{45}{250}} = 2 \cdot 19.8 = 39.6 \text{ degrees}
+% \end{equation}
 
+To calculate the angle of view $ \alpha $ we need the following information:
+
+\begin{itemize}
+    \item Sensor size [mm] $ d = 8.89 mm $
+    \item focal length $ f = 6 mm $
+\end{itemize}
+
+And we used the following formula:
+
+$$ \alpha = \frac{180}{\pi} \cdot 2\arctan{\frac{d}{2 \cdot f}} = \frac{180}{\pi} \cdot 2\arctan{\frac{8.89}{2 \cdot 6}} = 73.1 \text{ degrees} $$
