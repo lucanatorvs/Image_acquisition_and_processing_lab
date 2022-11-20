@@ -14,9 +14,25 @@ We applyed a salt and pepper noise filter to the image from assignment 2. The im
 
 \subsection{Write C/C++ code for Brightness correction}
 
-\begin{lstlisting}[language=C, caption=Noise correction filter, label=lst:noise_filter]
+\begin{lstlisting}[language=C, caption={Brightness correction}, label=lst:brightness_correction]
 
-// test
+    void gammaCorrection(Mat* input, Mat* output, double gamma) {
+        double gamma_c = (1/gamma);
+        Size s = input->size();
+        long h, w;
+        float sum;
+        
+        std::cout << "Correcting gamma" << std::endl;
+        uint8_t out[s.height][s.width];
+        
+        for (w=0; w<s.width; w++){ //loop over the image, 
+          for(h=0; h<s.height; h++){
+            sum = pow(255*((input->at<float>(w,h))/255),gamma_c);
+            out[h][w]=(uint8_t)sum;
+          }
+        }
+        std::memcpy(output->data, out, s.height*s.width*sizeof(uint8_t));
+      }
 
 \end{lstlisting}
 

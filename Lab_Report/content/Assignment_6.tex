@@ -19,3 +19,9 @@ if (captRAW == true) {
     imwrite("../capt/COL.png", image);
 }
 \end{lstlisting}
+
+\subsection{Convert this grayscale image to a color image by implementing a function to recover the actual colors}
+The function prototype should look as follows:
+\begin{lstlisting}[language=C, caption=function prototype, label=lst:prototype]
+void deBayer(Mat *rawImg, Mat *outImg);
+\end{lstlisting}

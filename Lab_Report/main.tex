@@ -119,13 +119,14 @@ Document version 1.0
 \renewcommand{\thesubsection}{\thesection.\alph{subsection}}
 
 %%%% SECTIONS
+\setcounter{section}{-1}
 \input{content/Introduction}
 \input{content/Assignment_1}
 \input{content/Assignment_2}
 \input{content/Assignment_3}
 \input{content/Assignment_4}
 \input{content/Assignment_5}
-%\input{content/Assignment_6}
+\input{content/Assignment_6}
 
 %%%%%%%% EXTRA TIPS %%%%%%%%
 %% hou deze structuur aan voor afbeeldingen
@@ -151,5 +152,10 @@ Document version 1.0
 \label{sec:appendix_B}
 
 \includepdf[pages=-]{./appendix/main.cpp.pdf}
+
+\section{Appendix C}
+\label{sec:appendix_C}
+
+\includepdf[pages=-]{./appendix/5convilution.pdf}
 
 \end{document}
