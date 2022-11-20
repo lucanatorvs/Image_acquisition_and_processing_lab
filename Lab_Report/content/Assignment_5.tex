@@ -1,7 +1,7 @@
 \section {Assignment 5 \\ {Convolution}}
 \label {sec:assignment_5}
 
-We wrote a convolutie 5x5 kernel with all 1's. The kernel put over the image from lab 2 is shown in figure \ref{fig:5x5}.
+We wrote a convolutie 5x5 kernel with all 1's. The kernel put over the image from lab 2 is shown in figure \ref{fig:5x5}. Note how the output of the filter will slightly blur the image.
 
 \begin{figure}[h!]
     \centering
@@ -11,6 +11,12 @@ We wrote a convolutie 5x5 kernel with all 1's. The kernel put over the image fro
 \end{figure}
 
 The code we used to make the kernel is shown in listing \ref{lst:5x5}. and the full code can be found in appendix \ref{sec:appendix_C}.
+
+We slightly deviated from the original assignment function prototype by replacing the int* argument to a 2D array pointer. We think that is not possible to easily call the kernel by reference without changing this argument, and makes the function more sensible to use. The size is fixed at compile time however.
+
+The code does not make use of any OpenCV iteration templates, which would have drastically improved the performance. However, the assignemnt stated that it was not allowed to rely on OpenCV functionality despite having to use the cv2::Mat class.
+
+The code below will loop over the height and width of the image, and on each pixel loop through the kernel passed as an argument. The result is the use of nested for loops, which quadratically increases processing time. It is highly inefficient and took roughly 13 seconds to execute on my machine (5587.52 BogoMips)
 
 \begin{lstlisting}[language=C, caption=5x5 kernel, label=lst:5x5]
     //int* from original assignment replaced with pointer to the kernel instead, because that makes more sense
