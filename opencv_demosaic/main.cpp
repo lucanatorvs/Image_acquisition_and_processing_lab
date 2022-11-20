@@ -42,6 +42,50 @@ void deBayer(Mat *rawImg, Mat *outImg) {
 				outImg->at<Vec3b>(row, col).val[BGR_GREEN] = rawImg->at<uint8_t>(row,col);			
 		}
 	}
+
+	// Interpolate green channel with a 3x3 kernel
+	std::cout << "Interpolating green channel" << std::endl;
+
+	for(row=0; row<rawImg->rows; row++){	//todo: make this evaluation smaller to increase speed
+		for(col=0; col<rawImg->cols; col++){
+			if (row % 2 == 0 && col % 2 == 0) //odd row, odd column
+				outImg->at<Vec3b>(row, col).val[BGR_GREEN] = (rawImg->at<uint8_t>(row,col-1) + rawImg->at<uint8_t>(row,col+1) + rawImg->at<uint8_t>(row-1,col) + rawImg->at<uint8_t>(row+1,col))/4;
+			if (row % 2 == 0 && col % 2 == 1) //odd row, even column
+				outImg->at<Vec3b>(row, col).val[BGR_GREEN] = (rawImg->at<uint8_t>(row,col-1) + rawImg->at<uint8_t>(row,col+1) + rawImg->at<uint8_t>(row-1,col) + rawImg->at<uint8_t>(row+1,col))/4;
+			if (row % 2 == 1 && col % 2 == 0) //even row, odd column
+				outImg->at<Vec3b>(row, col).val[BGR_GREEN] = (rawImg->at<uint8_t>(row,col-1) + rawImg->at<uint8_t>(row,col+1) + rawImg->at<uint8_t>(row-1,col) + rawImg->at<uint8_t>(row+1,col))/4;
+			if (row % 2 == 1 && col % 2 == 1) //even row, even column
+				outImg->at<Vec3b>(row, col).val[BGR_GREEN] = (rawImg->at<uint8_t>(row,col-1) + rawImg->at<uint8_t>(row,col+1) + rawImg->at<uint8_t>(row-1,col) + rawImg->at<uint8_t>(row+1,col))/4;			
+		}
+	}
+	
+	// Interpolate red and blue channels with a 3x3 kernel
+	std::cout << "Interpolating red and blue channels" << std::endl;
+
+	for(row=0; row<rawImg->rows; row++){	//todo: make this evaluation smaller to increase speed
+		for(col=0; col<rawImg->cols; col++){
+			if (row % 2 == 0 && col % 2 == 0) //odd row, odd column
+				outImg->at<Vec3b>(row, col).val[BGR_RED] = (rawImg->at<uint8_t>(row,col-1) + rawImg->at<uint8_t>(row,col+1) + rawImg->at<uint8_t>(row-1,col) + rawImg->at<uint8_t>(row+1,col))/4;
+			if (row % 2 == 0 && col % 2 == 1) //odd row, even column
+				outImg->at<Vec3b>(row, col).val[BGR_BLUE] = (rawImg->at<uint8_t>(row,col-1) + rawImg->at<uint8_t>(row,col+1) + rawImg->at<uint8_t>(row-1,col) + rawImg->at<uint8_t>(row+1,col))/4;
+			if (row % 2 == 1 && col % 2 == 0) //even row, odd column
+				outImg->at<Vec3b>(row, col).val[BGR_RED] = (rawImg->at<uint8_t>(row,col-1) + rawImg->at<uint8_t>(row,col+1) + rawImg->at<uint8_t>(row-1,col) + rawImg->at<uint8_t>(row+1,col))/4;
+			if (row % 2 == 1 && col % 2 == 1) //even row, even column
+				outImg->at<Vec3b>(row, col).val[BGR_BLUE] = (rawImg->at<uint8_t>(row,col-1) + rawImg->at<uint8_t>(row,col+1) + rawImg->at<uint8_t>(row-1,col) + rawImg->at<uint8_t>(row+1,col))/4;			
+		}
+	}
+
+	// Convert to RGB
+	std::cout << "Converting to RGB" << std::endl;
+
+	for(row=0; row<rawImg->rows; row++){	//todo: make this evaluation smaller to increase speed
+		for(col=0; col<rawImg->cols; col++){
+			outImg->at<Vec3b>(row, col).val[RGB_RED] = outImg->at<Vec3b>(row, col).val[BGR_RED];
+			outImg->at<Vec3b>(row, col).val[RGB_GREEN] = outImg->at<Vec3b>(row, col).val[BGR_GREEN];
+			outImg->at<Vec3b>(row, col).val[RGB_BLUE] = outImg->at<Vec3b>(row, col).val[BGR_BLUE];
+		}
+	}
+
 }
 
 int main() {
