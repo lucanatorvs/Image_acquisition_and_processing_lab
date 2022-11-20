@@ -43,10 +43,9 @@ void gammaCorrection(Mat* input, Mat* output, float gamma) {
     }
     std::memcpy(output->data, out, s.height*s.width*sizeof(uint8_t)); //copy our standard 2D array to a new buffer that OpenCV understands
 }
+\end{lstlisting}
 
 We had several options for correcting brightness. At first we considered simply increasing the value of each pixel by addition. However, this would significantly increase the brightness of the black background turning it dark grey. For this reason we settled on using a gamma correction curve instead. This would spread the histogram "bins" rather than moving them up. Determining the correct gamma correction constant was trial and error, exponents below 0,5 would make the object too bright. 
-
-\end{lstlisting}
 
 \subsection{Write C/C++ code for ‘Salt and Pepper Noise’ correction}
 
@@ -98,10 +97,10 @@ void filter(Mat* input, Mat* result) {
     std::memcpy(result->data, out, s.height*s.width*sizeof(uint8_t));
 }
 
+\end{lstlisting}
+
 The reason why we chose to implement a median filter is to preserve sharp edges to minimize loss of detail on the object, whereas a Gaussian or mean filter would blur sharp edges. In our code, a 3x3 sliding window is ran over the image, and the center pixel is replaced with the median of the window. The pixel values from the kernel are pushed back into a std::vector, this allows us to use STL library operations like std::sort to order the values.
 After applying the median filter, the resulting image looks slightly blurred, but sharp transitions are mostly preserved. Note that the 1px wide text at the top of the image is partially removed. This is due to the nature of a median filter and is very challanging to preserve.
-
-\end{lstlisting}
 
 The result after applying the noise removal filter is snow below \ref{fig:fortGT_Noise_Filtered}.
 \begin{figure}[h!]
