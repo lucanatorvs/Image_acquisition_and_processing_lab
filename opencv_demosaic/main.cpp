@@ -24,7 +24,7 @@ void deBayer(Mat *rawImg, Mat *outImg) {
 		throw("Sorry, only 1 8-bit channel should be used");
 	
 	(*outImg) = cv::Mat::zeros(rawImg->rows, rawImg->cols, CV_8UC3); // Fill output buffer with zeros with the correct geometry
-	
+	MAT outImgMID = cv::Mat::zeros(rawImg->rows, rawImg->cols, CV_8UC3); // Fill output buffer with zeros with the correct geometry
 	//Size s = rawImg->size(); I will be using rows and colums rather than height and width
 	long row, col;
 	
@@ -33,15 +33,73 @@ void deBayer(Mat *rawImg, Mat *outImg) {
 	for(row=0; row<rawImg->rows; row++){	//todo: make this evaluation smaller to increase speed
 		for(col=0; col<rawImg->cols; col++){
 			if (row % 2 == 0 && col % 2 == 0) //odd row, odd column
-				outImg->at<Vec3b>(row, col).val[BGR_GREEN] = rawImg->at<uint8_t>(row,col);
+				outImgMID->at<Vec3b>(row, col).val[BGR_GREEN] = rawImg->at<uint8_t>(row,col);
 			if (row % 2 == 0 && col % 2 == 1) //odd row, even column
-				outImg->at<Vec3b>(row, col).val[BGR_RED] = rawImg->at<uint8_t>(row,col);
+				outImgMID->at<Vec3b>(row, col).val[BGR_RED] = rawImg->at<uint8_t>(row,col);
 			if (row % 2 == 1 && col % 2 == 0) //even row, odd column
-				outImg->at<Vec3b>(row, col).val[BGR_BLUE] = rawImg->at<uint8_t>(row,col);
+				outImgMID->at<Vec3b>(row, col).val[BGR_BLUE] = rawImg->at<uint8_t>(row,col);
 			if (row % 2 == 1 && col % 2 == 1) //even row, even column
-				outImg->at<Vec3b>(row, col).val[BGR_GREEN] = rawImg->at<uint8_t>(row,col);			
+				outImgMID->at<Vec3b>(row, col).val[BGR_GREEN] = rawImg->at<uint8_t>(row,col);			
 		}
 	}
+
+	// Interpolate green channel by taking the value of the nearest neighbour that is green
+	std::cout << "Interpolating green channel" << std::endl;
+
+	for(row=0; row<outImgMID->rows; row++){
+		for(col=0; col<outImgMID->cols; col++){
+			if (outImgMID->at<Vec3b>(row, col).val[BGR_GREEN] == 0){
+				if (col > 0 && outImgMID->at<Vec3b>(row, col-1).val[BGR_GREEN] != 0)
+					outImg->at<Vec3b>(row, col).val[BGR_GREEN] = outImgMID->at<Vec3b>(row, col-1).val[BGR_GREEN];
+				else if (col < outImgMID->cols-1 && outImgMID->at<Vec3b>(row, col+1).val[BGR_GREEN] != 0)
+					outImg->at<Vec3b>(row, col).val[BGR_GREEN] = outImgMID->at<Vec3b>(row, col+1).val[BGR_GREEN];
+				else if (row > 0 && outImgMID->at<Vec3b>(row-1, col).val[BGR_GREEN] != 0)
+					outImg->at<Vec3b>(row, col).val[BGR_GREEN] = outImgMID->at<Vec3b>(row-1, col).val[BGR_GREEN];
+				else if (row < outImgMID->rows-1 && outImgMID->at<Vec3b>(row+1, col).val[BGR_GREEN] != 0)
+					outImg->at<Vec3b>(row, col).val[BGR_GREEN] = outImgMID->at<Vec3b>(row+1, col).val[BGR_GREEN];
+			}
+		}
+	}
+	
+	// Interpolate red channel by taking the value of the nearest neighbour that is red
+	std::cout << "Interpolating red channels" << std::endl;
+
+	for(row=0; row<outImgMID->rows; row++){
+		for(col=0; col<outImgMID->cols; col++){
+			if (outImgMID->at<Vec3b>(row, col).val[BGR_RED] == 0){
+				if (col > 0 && outImgMID->at<Vec3b>(row, col-1).val[BGR_RED] != 0)
+					outImg->at<Vec3b>(row, col).val[BGR_RED] = outImgMID->at<Vec3b>(row, col-1).val[BGR_RED];
+				else if (col < outImgMID->cols-1 && outImgMID->at<Vec3b>(row, col+1).val[BGR_RED] != 0)
+					outImg->at<Vec3b>(row, col).val[BGR_RED] = outImgMID->at<Vec3b>(row, col+1).val[BGR_RED];
+				else if (row > 0 && outImgMID->at<Vec3b>(row-1, col).val[BGR_RED] != 0)
+					outImg->at<Vec3b>(row, col).val[BGR_RED] = outImgMID->at<Vec3b>(row-1, col).val[BGR_RED];
+				else if (row < outImgMID->rows-1 && outImgMID->at<Vec3b>(row+1, col).val[BGR_RED] != 0)
+					outImg->at<Vec3b>(row, col).val[BGR_RED] = outImgMID->at<Vec3b>(row+1, col).val[BGR_RED];
+			}
+		}
+	}
+
+	// Interpolate blue channel by taking the value of the nearest neighbour that is blue
+	std::cout << "Interpolating blue channels" << std::endl;
+
+	for(row=0; row<outImgMID->rows; row++){
+		for(col=0; col<outImgMID->cols; col++){
+			if (outImgMID->at<Vec3b>(row, col).val[BGR_BLUE] == 0){
+				if (col > 0 && outImgMID->at<Vec3b>(row, col-1).val[BGR_BLUE] != 0)
+					outImg->at<Vec3b>(row, col).val[BGR_BLUE] = outImgMID->at<Vec3b>(row, col-1).val[BGR_BLUE];
+				else if (col < outImgMID->cols-1 && outImgMID->at<Vec3b>(row, col+1).val[BGR_BLUE] != 0)
+					outImg->at<Vec3b>(row, col).val[BGR_BLUE] = outImgMID->at<Vec3b>(row, col+1).val[BGR_BLUE];
+				else if (row > 0 && outImgMID->at<Vec3b>(row-1, col).val[BGR_BLUE] != 0)
+					outImg->at<Vec3b>(row, col).val[BGR_BLUE] = outImgMID->at<Vec3b>(row-1, col).val[BGR_BLUE];
+				else if (row < outImgMID->rows-1 && outImgMID->at<Vec3b>(row+1, col).val[BGR_BLUE] != 0)
+					outImg->at<Vec3b>(row, col).val[BGR_BLUE] = outImgMID->at<Vec3b>(row+1, col).val[BGR_BLUE];
+			}
+		}
+	}
+
+	// done?
+	std::cout << "Done?" << std::endl;
+
 }
 
 int main() {
